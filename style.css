@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400&family=Josefin+Sans:ital,wght@1,300&family=Rubik+Moonrocks&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -17,4 +19,107 @@ body {
 #wrapper { 
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftBar{ 
+    height: 100%;
+    width: 35%;
+    background-size:cover;
+    min-height: 100vh;
+    min-width: 35%;
+    background-image: url(https://images.unsplash.com/photo-1660337294765-2a20770826aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.leftBar p { 
+ color: rgba(255, 255, 255, 0.904);
+ height: fit-content;
+ font-weight: bold;
+ position: relative;
+ text-align: center;
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+.leftBar a {
+    color: white;
+}
+
+.logoWrapper {
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: 80%;
+    margin-bottom: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: sandybrown;
+    max-width: 100%;
+}
+
+.logoWrapper img { 
+    height: clamp(50px, 80%, 300px);
+}
+
+.logoWrapper h1 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 8vh;
+    overflow: hidden;
+}
+
+.rightBar{ 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 184, 135, 0.253);
+    font-family: 'Cairo', sans-serif;
+}
+
+.quoteWrapper{ 
+    width: 65%;
+    height: 30%;
+    margin-left: 2%;
+    line-height: 3vh;
+}
+
+.quoteWrapper h3{
+    font-size: clamp(20px, 3vh, 20rem);
+}
+
+.quoteWrapper :last-child {
+    margin-top: 3vh;
+}
+
+
+form h1 { 
+    font-size: clamp(20px, 3vh, 20rem);
+    background-color: sandybrown;
+    padding-left: 2vh;
+}
+
+.inputs { 
+    padding-left: 2vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: sandybrown;
+    padding-bottom: 2vh;
+}
+
+.inputs div { 
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.inputs input { 
+    background-color: transparent;
+    min-height: 30px;
+    max-width: 240px;
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    border-radius: 5px;
 }
