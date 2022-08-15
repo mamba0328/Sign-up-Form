@@ -113,6 +113,7 @@ form h1 {
     flex-wrap: wrap;
     background-color: sandybrown;
     padding-bottom: 3vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
 }
 
 .inputs label { 
@@ -162,6 +163,7 @@ form h1 {
     font-family: 'Cairo', sans-serif;
     font-size: medium;
     font-weight: 700;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
 }
 
 #confirmError { 
