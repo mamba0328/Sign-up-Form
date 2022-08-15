@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -44,10 +45,12 @@
                 <div>
                     <label for="password">Password</label>
                     <input type="password" id="password" name="usersPassword" placeholder="********" pattern='(?=^.{8,}$)(?=.*\d)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$' required>
+                    <span id="passwordError"></span>
                 </div>
                 <div>
                     <label for="confirm">Confirm Password</label>
                     <input type="password" id="confirm" name="usersConfirm"  placeholder="********" required>
+                    <span id="confirmError"></span>
                 </div>
 
                 

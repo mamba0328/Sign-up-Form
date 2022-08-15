@@ -164,6 +164,26 @@ form h1 {
     font-weight: 700;
 }
 
+#confirmError { 
+    color: rgb(212, 1, 1);
+    font-weight: 600;
+}
+
+#confirmError :empty{
+    opacity: 0;
+}
+
+#passwordError {
+    width: 80%;
+    margin-top: 1vh;
+    line-height: clamp(15px, 5vh, 15%);
+    color: rgb(212, 1, 1);
+}
+
+#passwordError :empty{ 
+    opacity: 0;
+}
+
 #logIn{ 
     margin: -3% 0 0 4%;
     font-weight: 700;
