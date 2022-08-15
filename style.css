@@ -76,12 +76,15 @@ body {
     height: 100%;
     background-color: rgba(222, 184, 135, 0.253);
     font-family: 'Cairo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .quoteWrapper{ 
     width: 65%;
-    height: 30%;
-    margin-left: 2%;
+    height: 20%;
+    margin-left: 4vh;
     line-height: 3vh;
 }
 
@@ -93,21 +96,28 @@ body {
     margin-top: 3vh;
 }
 
-
+form { 
+    height: 60%;
+}
 form h1 { 
     font-size: clamp(20px, 3vh, 20rem);
     background-color: sandybrown;
-    padding-left: 2vh;
+    padding-left: 4vh;
 }
 
 .inputs { 
-    padding-left: 2vh;
+    padding-left: 4vh;
     display: flex;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
     background-color: sandybrown;
-    padding-bottom: 2vh;
+    padding-bottom: 3vh;
+}
+
+.inputs label { 
+    color: rgba(0, 0, 0, 0.801);
+    font-weight: 800
 }
 
 .inputs div { 
@@ -120,6 +130,45 @@ form h1 {
     background-color: transparent;
     min-height: 30px;
     max-width: 240px;
-    border: 1px solid rgba(128, 128, 128, 0.514);
+    border: 1px solid #E5E7EB;
     border-radius: 5px;
+    padding-left: 2%;
+}
+
+.inputs input:focus { 
+    border: 2px solid rgb(255, 81, 0);
+    outline: none;
+}
+
+.inputs input:not(:placeholder-shown):invalid {
+    border: 2px solid rgb(255, 0, 0);
+    outline: none;
+}
+
+.inputs input:not(:placeholder-shown):valid {
+    border: 2px solid rgb(0, 102, 0);
+    outline: none;
+}
+
+
+#submitButton { 
+    min-height: 40px;
+    width: 200px;
+    background-color: rgb(253, 132, 25);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 4%; 
+    font-family: 'Cairo', sans-serif;
+    font-size: medium;
+    font-weight: 700;
+}
+
+#logIn{ 
+    margin: -3% 0 0 4%;
+    font-weight: 700;
+}
+
+#logIn a{ 
+    color: orange;
 }

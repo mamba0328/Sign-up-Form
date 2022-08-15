@@ -27,31 +27,34 @@
              <div class="inputs"> 
                 <div> 
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="usersName" required>
+                    <input type="text" id="firstName" name="usersName" placeholder="John" required>
                 </div>
                 <div>
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="userSurname" required>
+                    <input type="text" id="lastName" name="userSurname" placeholder="Dou" required>
                 </div>
                 <div>
                     <label for="email">Email Adress</label>
-                    <input type="email" id="email" name="usersEmail" required>
+                    <input type="email" id="email" name="usersEmail" autocomplete="email" placeholder="example@anymail.net" required>
                 </div>
                 <div>
                     <label for="number">Phone Number</label>
-                    <input type="tel" id="number" name="usersNumber" required>
+                    <input type="tel" id="number" name="usersNumber" minlength="13" placeholder="+380980085555" required>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="usersPassword" required>
+                    <input type="password" id="password" name="usersPassword" placeholder="********" pattern='(?=^.{8,}$)(?=.*\d)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$' required>
                 </div>
                 <div>
                     <label for="confirm">Confirm Password</label>
-                    <input type="password" id="confirm" name="usersConfirm" required>
+                    <input type="password" id="confirm" name="usersConfirm"  placeholder="********" required>
                 </div>
+
+                
              </div>
+             <button type="submit" id="submitButton">Create Account</button>
+             <p id="logIn">Already have an account? <a href="https://www.youtube.com/watch?v=pxw-5qfJ1dk&ab_channel=KacperKwinta">Log in</a></p>
             </form>
-            <div class="logIn"></div>
         </div>
     </div>
 </body>
